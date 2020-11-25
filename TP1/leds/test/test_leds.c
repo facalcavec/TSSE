@@ -1,3 +1,14 @@
+/**
+ * file: test_leds.c
+ * 
+ * archivo de prueba TDD
+ * 
+ * autor: Felipe A. Calcavecchia
+ * 
+ * fecha :19/11/2020
+ * 
+ */ 
+
 /*--------- pruebas a realizar ------------------------------------- 
 
 1 Después de la inicialización todos los LEDs deben quedar apagados.

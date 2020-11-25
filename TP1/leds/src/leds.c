@@ -1,3 +1,14 @@
+/**
+ * file: leds.c
+ * 
+ * archivo de produccion para encender LEDs
+ * 
+ * autor: Felipe A. Calcavecchia
+ * 
+ * fecha :19/11/2020
+ * 
+ */ 
+
 #include "leds.h"
 
 #define LEDS_ALL_OFF    0x0000
