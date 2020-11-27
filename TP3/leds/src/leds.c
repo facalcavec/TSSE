@@ -14,6 +14,7 @@
 #define LEDS_ALL_OFF    0x0000
 #define LEDS_ALL_ON     0xFFFF
 #define LSB 1
+#define LEDS_MASK 0x0001
 
 static uint16_t estado;
 static uint16_t *leds;
@@ -67,7 +68,7 @@ void Led_TurnAllOff(void)
 }
 
 // consulta el estado de un LED
-uint8_t Estado_de_un_Led (uint8_t led)
+bool Estado_de_un_Led (uint8_t led)
 {
-    return ((*leds >> (led - LSB)) & 0x0001);
+    return ((*leds >> (led - LSB)) & LEDS_MASK);
 }
