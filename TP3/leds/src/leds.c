@@ -68,7 +68,7 @@ void Led_TurnAllOff(void)
 }
 
 // consulta el estado de un LED
-bool Estado_de_un_Led (uint8_t led)
+bool Led_State (uint8_t led)
 {
     return ((*leds >> (led - LSB)) & LEDS_MASK);
 }

@@ -15,4 +15,4 @@ void Leds_On( uint8_t );
 void Leds_Off( uint8_t );
 void Led_TurnAllOn(void);
 void Led_TurnAllOff(void);
-bool Estado_de_un_Led (uint8_t led);
+bool Led_State (uint8_t led);

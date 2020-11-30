@@ -87,16 +87,10 @@ void test_apagar_todos(void)
     TEST_ASSERT_EQUAL_HEX16(0, ledsVirtuales);
 }
 
-// se apaga un LED individual
-void test_apagar_led_12( void )
-{
-    Leds_Off(12);
-    TEST_ASSERT_EQUAL_HEX16( 0, ledsVirtuales);
-}
-
 // se consulta el estado de un LED
 void test_estado_led(void)
 {
+    TEST_ASSERT_EQUAL_HEX( OFF, Led_State(12) );
     Leds_On(12);
-    TEST_ASSERT_EQUAL_HEX( ON, Estado_de_un_Led(12) );
+    TEST_ASSERT_EQUAL_HEX( ON, Led_State(12) );
 }
